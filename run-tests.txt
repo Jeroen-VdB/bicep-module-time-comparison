@@ -1,0 +1,11 @@
+az deployment sub create -f .\single-module.bicep -l westeurope
+az deployment sub create -f .\multi-module.bicep -l westeurope
+
+az deployment sub create -f .\single-module.bicep -l westeurope --name single-module-again
+az deployment sub create -f .\multi-module.bicep -l westeurope --name multi-module-again
+
+az deployment sub create -f .\single-module.bicep -l westeurope --name single-module-again2
+az deployment sub create -f .\multi-module.bicep -l westeurope --name multi-module-again2
+
+az deployment sub create -f .\inbetween-module.bicep -l westeurope --name inbetween-module
+az deployment sub create -f .\inbetween-module.bicep -l westeurope --name inbetween-module-again
